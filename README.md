@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Tatvasoft Practical Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This task is about displaying and filtering the User List and User Info. 
 
-## Available Scripts
+### `Clone the repository`
 
-In the project directory, you can run:
+Clone the repository from the [https://github.com/nikunj0706/tatvasoft-final-task.git](https://github.com/nikunj0706/tatvasoft-final-task.git).
 
-### `yarn start`
+### `Install Modules`
 
+Run the command -  npm install
+
+This command installs all necessary modules for the project.
+
+### `Start Project`
+
+Run the command -  npm start run
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### `Project Detail`
 
-### `yarn test`
+User can be searched by giving input in the textbox.
+Search is on the basis of user email and user name.
+On clicking on the row of table, a detailed info of particular user can be seen in a modal.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Screenshots
 
-### `yarn build`
+#### `Loading User Info`
+![loading-user-info](https://user-images.githubusercontent.com/40098026/105997940-2714b800-60d2-11eb-9d5c-ae5a96a80ec9.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### `User List With Pagination`
+![userlist-with-pagination](https://user-images.githubusercontent.com/40098026/105998126-51ff0c00-60d2-11eb-93a5-5e4773026f4d.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### `Filtered User List`
+![filtered-user-list](https://user-images.githubusercontent.com/40098026/105998184-63481880-60d2-11eb-89a8-c8f421e04718.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### `No Records Found`
+![no-record-with-filter-value](https://user-images.githubusercontent.com/40098026/105998267-7529bb80-60d2-11eb-9363-f50224abe2b1.png)
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### `Individual User Detail`
+![user-detail](https://user-images.githubusercontent.com/40098026/105998336-85da3180-60d2-11eb-9008-3edf95ef650a.png)
