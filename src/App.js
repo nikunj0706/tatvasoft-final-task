@@ -44,6 +44,27 @@ function App() {
                                                         obj.name.last.includes(filterValue));
     setFilteredUserData(filtereNewdData);
   }, [filterValue]);
+
+  // Handler to add new user
+  const handleAddUser = (newUser) => {
+    // Add the new user to the beginning of both userData and filteredUserData
+    const updatedUserData = [newUser, ...userData];
+    setUserData(updatedUserData);
+    
+    // If there's a filter applied, check if the new user matches the filter
+    if (filterValue) {
+      const matchesFilter = newUser.email.includes(filterValue) ||
+                           newUser.name.first.includes(filterValue) ||
+                           newUser.name.last.includes(filterValue);
+      if (matchesFilter) {
+        setFilteredUserData(prev => [newUser, ...prev]);
+      }
+    } else {
+      // If no filter, add to filtered data as well at the beginning
+      setFilteredUserData(prev => [newUser, ...prev]);
+    }
+  };
+
   return (
        <div className="App">
          <UserModule 
@@ -55,7 +76,7 @@ function App() {
           setCurrentRecord={setCurrentRecord}
           currentRecord={currentRecord}
           isVisible={isVisible}
-
+          onAddUser={handleAddUser}
            />
       </div>
    
